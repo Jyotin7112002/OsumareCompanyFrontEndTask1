@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo App — Landing</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+<!--  front part-->
+<header class="header">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">do List</div>
+
+    <!-- Menu -->
+    <nav class="navbar">
+      <a href="#">About Us</a>
+      <a href="#">Features</a>
+      <a href="#">More Option</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Buttons -->
+    <div class="nav-buttons">
+      <button class="login-btn">Log In</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Simplify Your Life with Our<br>Todo App</h1>
+  <p>
+    Stay organized and boost your productivity with our intuitive todo website.
+    Experience a modern approach to task management that fits your lifestyle.
+  </p>
+</section>
+
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+    
+
+      <div class="header-cta">
+        <button id="openForm" class="btn btn-primary">Get Start</button>
+         <button id="openForm" class="btn btn-primary">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Organize.<br>Achieve.<br>Relax.</h1>
+          <p class="lead">Manage your tasks effortlessly with an intuitive to-do platform.</p>
+          <div class="hero-actions">
+            <button id="openForm2" class="btn btn-accent">Get Started</button>
+            <button class="btn btn-outline" onclick="location.href='#features'">Learn more</button>
+          </div>
+
+          <div class="social-row" aria-hidden="true">
+            
+            <img src="https://tse3.mm.bing.net/th/id/OIP.OHrLy99qn33C81FRGt4OdQHaHa?pid=Api&P=0&h=180" alt="" />
+            <img src="https://vectorified.com/images/facebook-icon-png-white-1.png" alt="" />
+            <img src="http://clipart-library.com/images_k/youtube-transparent-png/youtube-transparent-png-7.png" alt="" />
+            <img src="https://w7.pngwing.com/pngs/585/152/png-transparent-social-pinterest-icon.png" alt="" />
+            <img src="https://tse3.mm.bing.net/th/id/OIP.17i4eaWud_gMBXstFl8gPwHaEK?pid=Api&P=0&h=180" alt="" />
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="card media-card" role="img" aria-label="preview image">
+            <img src="https://wallpapercave.com/wp/wp4936606.png" alt="App preview" loading="lazy" width="420" height="300">
+            <div class="card-overlay">
+              <p class="card-heading">Our Tools</p>
+              <button class="play-btn" aria-label="Play demo">▶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="container features" aria-labelledby="features-title">
+      <h2 id="features-title">Transform Your Productivity with Our Innovative To-Do List Features </h2>
+      <p class="sub">Features designed for clarity and speed.</p>
+<div class="features-grid">
+
+  <div class="feature-card" data-num="01">
+    <img src="https://cdn-icons-png.flaticon.com/512/6047/6047946.png" class="feature-icon">
+    <div class="feature-title">User-Friendly Interface</div>
+    <div class="line"></div>
+    <div class="feature-desc">Our platform offers seamless task management to boost your efficiency.</div>
+  </div>
+
+  <div class="feature-card" data-num="02">
+    <img src="https://purepng.com/public/uploads/large/share-icon-7nl.png" class="feature-icon">
+    <div class="feature-title">Collaborate & Share Effortlessly</div>
+    <div class="line"></div>
+    <div class="feature-desc">Invite team members to work together and achieve your goals faster.</div>
+  </div>
+
+  <div class="feature-card" data-num="03">
+    <img src="https://cdn-icons-png.flaticon.com/512/3839/3839102.png" class="feature-icon">
+    <div class="feature-title">Effortless Collaboration</div>
+    <div class="line"></div>
+    <div class="feature-desc">Invite team members to work together and achieve your goals faster.</div>
+  </div>
+
+  <div class="feature-card" data-num="04">
+    <img src="https://thumbs.dreamstime.com/b/flat-design-icon-open-book-pen-open-book-pen-icon-writing-education-diary-flat-style-375961584.jpg" class="feature-icon">
+    <div class="feature-title">Seamless Access</div>
+    <div class="line"></div>
+    <div class="feature-desc">Stay connected and manage your tasks on the go with ease.</div>
+  </div>
+
+</div>
+    </section>
+
+    <!-- MODAL FORM -->
+    <div id="formModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-panel" role="document">
+        <div class="modal-header">
+          <h3 id="modalTitle">Get Started Today</h3>
+          <button id="closeForm" class="close-x" aria-label="Close form">✕</button>
+        </div>
+
+        <p class="modal-sub">Fill in your details and take control of your tasks.</p>
+
+        <form id="leadForm" class="lead-form" novalidate>
+          <div class="row two-cols">
+            <div class="field">
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" required>
+              <span class="error" id="err-first"></span>
+            </div>
+
+            <div class="field">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" required>
+              <span class="error" id="err-last"></span>
+            </div>
+          </div>
+
+          <label class="label-inline">Gender</label>
+          <div class="row">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female" required> Female</label>
+            <span class="error" id="err-gender"></span>
+          </div>
+
+          <label class="label-inline">Language</label>
+          <div class="row">
+            <label><input type="checkbox" class="lang" value="English"> English</label>
+            <label><input type="checkbox" class="lang" value="Hindi"> Hindi</label>
+            <label><input type="checkbox" class="lang" value="Marathi"> Marathi</label>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+            <span class="error" id="err-email"></span>
+          </div>
+
+          <label class="terms">
+            <input type="checkbox" id="terms" required>
+            I agree to the <a href="#" target="_blank" rel="noopener">terms and conditions</a>
+          </label>
+          <span class="error" id="err-terms"></span>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" id="cancelForm" class="btn btn-outline">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- THANK YOU POPUP -->
+    <div id="thankYou" class="thank-you" aria-hidden="true" role="status" aria-live="polite">
+      <div class="thank-panel">
+        <div class="heart" aria-hidden="true">❤️</div>
+        <h3>Thank you for connect with us.</h3>
+        <p>Our team will contacting with you soon</p>
+        <button id="closeThank" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+
+    <!-- SUBMISSIONS TABLE -->
+    <section id="submissions" class="container submissions" aria-labelledby="submissionsTitle">
+      <h2 id="submissionsTitle">Submissions</h2>
+      <div class="table-wrap" role="region" aria-label="Submitted leads">
+        <table id="subTable" class="sub-table" aria-describedby="submissionsTitle">
+          <thead>
+            <tr><th>Name</th><th>Email</th><th>Gender</th><th>Language</th></tr>
+          </thead>
+          <tbody>
+            <!-- rows appended here -->
+            <!-- rows appended here -->
+            <div class="testimonial-section">
+
+  <h2 class="testimonial-title">Customer Testimonials</h2>
+  <p class="testimonial-sub">This tool has transformed my productivity and organization!</p>
+
+  <div class="testimonial-container">
+
+    <!-- Left text card -->
+    <div class="testimonial-box">
+      <p class="testimonial-text">
+        Using this website has made my tasks so much easier!  
+        I can't imagine my day without it.
+      </p>
+
+      <div class="author-info">
+        <div class="author-name">Sherri Cronin</div>
+        <div class="author-role">Project Manager, TechCorp</div>
+      </div>
+    </div>
+
+    <!-- Right image card -->
+    <div class="testimonial-image-box">
+      <img src="https://media.istockphoto.com/id/1618702065/photo/teenage-girl.jpg?s=2048x2048&w=is&k=20&c=HQTXxoIUGUHw0oZbyeIqqPzUXYdCPA0VhLz3GsK63m8=" alt="Customer Image">
+    </div>
+
+  </div>
+
+</div>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Side -->
+    <div class="footer-left">
+      <h2 class="logo">doList</h2>
+
+      <p class="newsletter-text">
+        Subscribe to our newsletter for the latest features and updates delivered to you.
+      </p>
+
+      <div class="newsletter-box">
+        <input type="email" placeholder="Your email here" />
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+
+      <p class="policy-text">
+        By subscribing, you agree to our Privacy Policy and consent to receive updates.
+      </p>
+    </div>
+
+    <!-- Middle Links -->
+    <div class="footer-links">
+      <h4>Useful Links</h4>
+      <ul>
+        <li>Home Page</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Blog Posts</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li>Help Center</li>
+        <li>User Guide</li>
+        <li>Community Forum</li>
+        <li>Feedback</li>
+        <li>Support</li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-links">
+      <h4>Connect With Us</h4>
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Todo App — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
